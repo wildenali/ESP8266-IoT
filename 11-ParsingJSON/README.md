@@ -13,4 +13,8 @@
 1. Run the esp8266
 2. Check the result on Serial Monitor
 
-Reference from : [https://www.instructables.com/ESP8266-Parsing-JSON/](https://www.instructables.com/ESP8266-Parsing-JSON/)
+Reference from :
+
+- [https://www.instructables.com/ESP8266-Parsing-JSON/](https://www.instructables.com/ESP8266-Parsing-JSON/)
+- [https://techtutorialsx.com/2016/07/30/esp8266-parsing-json/](https://techtutorialsx.com/2016/07/30/esp8266-parsing-json/)
+- [https://techtutorialsx.com/2016/08/06/esp8266-parse-json-arrays/](https://techtutorialsx.com/2016/08/06/esp8266-parse-json-arrays/)
