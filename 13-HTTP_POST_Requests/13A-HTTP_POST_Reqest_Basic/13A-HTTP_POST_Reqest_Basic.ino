@@ -1,8 +1,8 @@
 #include <ESP8266WiFi.h>
 #include <ESP8266HTTPClient.h>
 
-const char* ssid = "101 residance_fm";
-const char* password = "101littleangel";
+const char* ssid = "inimodem";
+const char* password = "inimodem";
 
 void setup () {
   Serial.begin(115200);
