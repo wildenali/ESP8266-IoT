@@ -50,6 +50,14 @@
   - "helooow" for field of message
 - Done and check in the mosquitto_sub.exe terminal
 
+## Install PubSubClient
+
+1. Open Arduino IDE
+2. Click Sketch > Include Library > Manage Libraries...
+3. Type `pubsubclient` and install `pubsubclient` by Nick O'Leary. Click Close button if already done installed
+4. Check on File > Examples > PubSubClient. If there means the installation was successful
+
 References:
 
 - [https://www.youtube.com/watch?v=MtMk6nChaW8](https://www.youtube.com/watch?v=MtMk6nChaW8)
+- [https://doc.mapid.io/doc_iot/lets_code_cara_mengirimkan_data_melalui_komunikasi_mqtt_dengan_arduino_ide](https://doc.mapid.io/doc_iot/lets_code_cara_mengirimkan_data_melalui_komunikasi_mqtt_dengan_arduino_ide)
