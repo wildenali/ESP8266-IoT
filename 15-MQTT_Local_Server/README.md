@@ -15,12 +15,15 @@ Install Mosquitto</br>
     - Close the terminal
 
 ## `Publisher and Subscriber NodeJS`
-1. Create a new publisher nodejs file named `pub.js`
+0. Create package.js file `$ npm init`
+1. Install node_modules `$ npm i`
+2. Install mqtt nodejs `$ npm i mqtt`
+3. Create a new publisher nodejs file named `pub.js`
     ```sh
     // MQTT publisher
     var mqtt = require('mqtt')
     var client = mqtt.connect('mqtt://localhost:1883')
-    var topic = 'initopic'
+    var topic = 'initopic/wilden/Sensor1'
     var message = '0'
     var nambah = 0;
 
@@ -36,12 +39,12 @@ Install Mosquitto</br>
         }, 100)
     })
     ```
-2. Create a new subscriber nodejs file named `sub.js`
+4. Create a new subscriber nodejs file named `sub.js`
     ```sh
     // MQTT subscriber
     var mqtt = require('mqtt')
     var client = mqtt.connect('mqtt://localhost:1883')
-    var topic = 'initopic'
+    var topic = 'initopic/wilden/Sensor1'
 
     client.on('message', (topic, message)=>{
         message = message.toString()
@@ -52,7 +55,7 @@ Install Mosquitto</br>
         client.subscribe(topic)
     })
     ```
-3. Run the pub.js and sub.js
+5. Run the pub.js and sub.js
     - Run the mosquitto broker, go to mosquitto folder
         `$ cd c:\Program Files\mosquitto`
         `$ mosquitto.exe`
@@ -149,7 +152,7 @@ Install Mosquitto</br>
     - Open a sub.ino with Arduino IDE and click Serial Monitor Icon
 
 ## `Publisher and Subscriber Python`
-1. Install paho mqtt
+1. Install paho mqtt on python project `$ pip install paho-mqtt`
 2. Create a new publisher python file named `pub.py`
     ```sh
     # publisher
