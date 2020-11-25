@@ -2,7 +2,7 @@
 
 ## `Broker`
 Install Mosquitto</br>
-- http://jaza.li/mqtt/cara-instal-mosquitto-pada-windows-os/
+- Referensi dari http://jaza.li/mqtt/cara-instal-mosquitto-pada-windows-os/
 - Test mosquitto broker
     - Go to mosquitto folder
         `$ cd c:\Program Files\mosquitto`
