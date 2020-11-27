@@ -30,20 +30,22 @@ void setup() {
 
   mesh.setName(nodeName); // This needs to be an unique name! 
 
-  mesh.onReceive([](uint32_t from, String &msg) {
-    Serial.printf("Received message by id from: %u, %s\n", from, msg.c_str());
-  });
+//  mesh.onReceive([](uint32_t from, String &msg) {
+//    Serial.printf("Received message by id from: %u, %s\n", from, msg.c_str());
+//  });
 
   mesh.onReceive([](String &from, String &msg) {
     Serial.printf("Received message by name from: %s, %s\n", from.c_str(), msg.c_str());
+    String to = "sensor_1";
+    mesh.sendSingle(to, msg);
   });
 
   mesh.onChangedConnections([]() {
     Serial.printf("Changed connection\n");
   });
 
-  userScheduler.addTask(taskSendMessage);
-  taskSendMessage.enable();
+//  userScheduler.addTask(taskSendMessage);
+//  taskSendMessage.enable();
 }
 
 void loop() {
