@@ -178,7 +178,7 @@ Install Mosquitto</br>
     import paho.mqtt.client as mqtt
     
     client = mqtt.Client()
-    client = connect('localhost', 1883)
+    client.connect('localhost', 1883)
 
     def on_connect(client, userdata, flags, rc):
         print("Connected to broker!")
