@@ -160,7 +160,7 @@ Install Mosquitto</br>
     from time import sleep
 
     client = mqtt.Client()
-    client = connect('localhost', 1883)
+    client.connect('localhost', 1883)
 
     x = 10
 
